@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6430DFC1FF32571005BD8D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6430DFB1FF32571005BD8D7 /* Extensions.swift */; };
+		C6430DFE1FF32BD3005BD8D7 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6430DFD1FF32BD3005BD8D7 /* NetworkTests.swift */; };
 		C6CEE60E1FF1B89300C25BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CEE60D1FF1B89300C25BA8 /* AppDelegate.swift */; };
 		C6CEE6101FF1B89300C25BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CEE60F1FF1B89300C25BA8 /* ViewController.swift */; };
 		C6CEE6131FF1B89300C25BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CEE6111FF1B89300C25BA8 /* Main.storyboard */; };
@@ -14,6 +16,9 @@
 		C6CEE6181FF1B89300C25BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CEE6161FF1B89300C25BA8 /* LaunchScreen.storyboard */; };
 		C6CEE6231FF1B89300C25BA8 /* StockeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CEE6221FF1B89300C25BA8 /* StockeyTests.swift */; };
 		C6CEE62E1FF1B89300C25BA8 /* StockeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CEE62D1FF1B89300C25BA8 /* StockeyUITests.swift */; };
+		C6CEE6411FF1BAD700C25BA8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CEE6401FF1BAD700C25BA8 /* DataService.swift */; };
+		C6CEE6431FF1BB5800C25BA8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CEE6421FF1BB5800C25BA8 /* Endpoint.swift */; };
+		C6CEE6451FF1C54600C25BA8 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CEE6441FF1C54600C25BA8 /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6430DFB1FF32571005BD8D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C6430DFD1FF32BD3005BD8D7 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		C6CEE60A1FF1B89300C25BA8 /* Stockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stockey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CEE60D1FF1B89300C25BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6CEE60F1FF1B89300C25BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		C6CEE6291FF1B89300C25BA8 /* StockeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CEE62D1FF1B89300C25BA8 /* StockeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockeyUITests.swift; sourceTree = "<group>"; };
 		C6CEE62F1FF1B89300C25BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6CEE6401FF1BAD700C25BA8 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C6CEE6421FF1BB5800C25BA8 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C6CEE6441FF1C54600C25BA8 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,13 @@
 		C6CEE60C1FF1B89300C25BA8 /* Stockey */ = {
 			isa = PBXGroup;
 			children = (
-				C6CEE60D1FF1B89300C25BA8 /* AppDelegate.swift */,
-				C6CEE60F1FF1B89300C25BA8 /* ViewController.swift */,
-				C6CEE6111FF1B89300C25BA8 /* Main.storyboard */,
-				C6CEE6141FF1B89300C25BA8 /* Assets.xcassets */,
-				C6CEE6161FF1B89300C25BA8 /* LaunchScreen.storyboard */,
 				C6CEE6191FF1B89300C25BA8 /* Info.plist */,
+				C6CEE63F1FF1B9D800C25BA8 /* Network Manager */,
+				C6CEE63E1FF1B90600C25BA8 /* Supporting Files */,
+				C6CEE63D1FF1B8C200C25BA8 /* Controller */,
+				C6CEE63C1FF1B8B600C25BA8 /* View */,
+				C6CEE63B1FF1B8A300C25BA8 /* Model */,
+				C6CEE60D1FF1B89300C25BA8 /* AppDelegate.swift */,
 			);
 			path = Stockey;
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C6CEE6221FF1B89300C25BA8 /* StockeyTests.swift */,
+				C6430DFD1FF32BD3005BD8D7 /* NetworkTests.swift */,
 				C6CEE6241FF1B89300C25BA8 /* Info.plist */,
 			);
 			path = StockeyTests;
@@ -123,6 +135,49 @@
 				C6CEE62F1FF1B89300C25BA8 /* Info.plist */,
 			);
 			path = StockeyUITests;
+			sourceTree = "<group>";
+		};
+		C6CEE63B1FF1B8A300C25BA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEE6441FF1C54600C25BA8 /* Stock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6CEE63C1FF1B8B600C25BA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEE6111FF1B89300C25BA8 /* Main.storyboard */,
+				C6CEE6161FF1B89300C25BA8 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6CEE63D1FF1B8C200C25BA8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEE60F1FF1B89300C25BA8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C6CEE63E1FF1B90600C25BA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEE6141FF1B89300C25BA8 /* Assets.xcassets */,
+				C6430DFB1FF32571005BD8D7 /* Extensions.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6CEE63F1FF1B9D800C25BA8 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEE6401FF1BAD700C25BA8 /* DataService.swift */,
+				C6CEE6421FF1BB5800C25BA8 /* Endpoint.swift */,
+			);
+			path = "Network Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +314,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CEE6411FF1BAD700C25BA8 /* DataService.swift in Sources */,
+				C6430DFC1FF32571005BD8D7 /* Extensions.swift in Sources */,
 				C6CEE6101FF1B89300C25BA8 /* ViewController.swift in Sources */,
+				C6CEE6431FF1BB5800C25BA8 /* Endpoint.swift in Sources */,
+				C6CEE6451FF1C54600C25BA8 /* Stock.swift in Sources */,
 				C6CEE60E1FF1B89300C25BA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6430DFE1FF32BD3005BD8D7 /* NetworkTests.swift in Sources */,
 				C6CEE6231FF1B89300C25BA8 /* StockeyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
