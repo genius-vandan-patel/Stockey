@@ -25,6 +25,8 @@ struct Stock {
     let close: String
     let volume: String
     let name: String
+    let lastRefreshed: String
+    let timeZone: String
     
     init(dict: [String: Any], metaData:  [String:Any]) {
         self.open = dict["1. open"] as! String
@@ -33,5 +35,7 @@ struct Stock {
         self.close = dict["4. close"] as! String
         self.volume = dict["5. volume"] as! String
         self.name = metaData["2. Symbol"] as! String
+        self.lastRefreshed = metaData["3. Last Refreshed"] as! String
+        self.timeZone = metaData["6. Time Zone"] as! String
     }
 }

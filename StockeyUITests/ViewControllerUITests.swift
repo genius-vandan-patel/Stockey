@@ -1,15 +1,16 @@
 //
-//  StockeyUITests.swift
+//  ViewControllerUITests.swift
 //  StockeyUITests
 //
-//  Created by Vandan Patel on 12/25/17.
+//  Created by Vandan Patel on 12/27/17.
 //  Copyright © 2017 Vandan Patel. All rights reserved.
 //
 
 import XCTest
 
-class StockeyUITests: XCTestCase {
-        
+class ViewControllerUITests: XCTestCase {
+    let app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
         
@@ -26,5 +27,20 @@ class StockeyUITests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    func testRefreshButtonDisabledAfterTap() {
+        let refreshButton = app.navigationBars["Tech Stocks"].buttons["Refresh"]
+        refreshButton.tap()
+        XCTAssert(refreshButton.isEnabled == false, "Refresh Button is not disabled")
+    }
+    
+    func testTitleLabel() {
+        XCTAssert(app.navigationBars["Tech Stocks"].exists, "Tech Stocks title does not exist")
+    }
+    
+    func testRefreshButtonExists() {
+        let refreshButton = app.navigationBars["Tech Stocks"].buttons["Refresh"]
+        XCTAssert(refreshButton.exists, "Refresh button does not exist")
     }
 }
